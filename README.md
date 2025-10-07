@@ -7,6 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The React useCallback Hook returns a memoized callback function.
 One reason to use useCallback is to prevent a component from re-rendering unless its props have changed.
+useCallback keeps the same reference between re-renders.
+Child is wrapped in memo, so it only re-renders when its props change.
 
 React useCallback Hook Syntax:
 const memoizedCallback = useCallback(
